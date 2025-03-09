@@ -31,13 +31,12 @@ HEX0[7] = 1  (Decimal Point, optional)
 - The equations are **simplified** using Boolean algebra.
 
 ### 2. VHDL Code
-- The simplified equations are implemented in **VHDL**.
+- The simplified equations are implemented in **VHDL** in the file `HEXcode.vhd`.
 - Inputs are mapped as follows:
   - `SW3 → A`
   - `SW2 → B`
   - `SW1 → C`
   - `SW0 → D`
-- The file is saved as `Seven_Segments.vhd`.
 
 ### 3. Simulation
 - A testbench is created to simulate **all 16 input combinations**.
