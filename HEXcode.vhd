@@ -2,7 +2,7 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
 
-ENTITY Lab2 IS
+ENTITY HEXcode IS
  PORT(
       SwitchA : in std_logic;
       SwitchB : in std_logic;
@@ -13,7 +13,7 @@ ENTITY Lab2 IS
       );
 END ENTITY;
 
-ARCHITECTURE behave OF Lab2 IS 
+ARCHITECTURE behave OF HEXcode IS 
 BEGIN
 	  HEX0(0) <= ((NOT SwitchA) AND (SwitchB) AND (NOT SwitchC) AND (NOT SwitchD)) OR ((NOT SwitchA) AND (NOT SwitchB) AND (NOT SwitchC) AND (SwitchD));
 	  HEX0(1) <= ((NOT SwitchA) AND (SwitchB) AND (NOT SwitchC) AND (SwitchD)) OR ((SwitchA) AND (SwitchB) AND (NOT SwitchD)) OR (SwitchA AND SwitchB AND SwitchC) OR (SwitchB AND SwitchC AND NOT SwitchD);
